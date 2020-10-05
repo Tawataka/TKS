@@ -23,40 +23,42 @@ class MyHomePage extends StatelessWidget {
         title: new Text("TKS"),
         backgroundColor: Color(0xFF6dbf43),
       ),
-      body: (Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+      body: (Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: <Widget>[
-                Image.asset(
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
                   'assets/TKS.jpg',
                   height: 300,
                   width: 300,
                 ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: RaisedButton(
-              color: Color(0xFF6dbf43),
-              textColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
-              child: Text(
-                'Options Page',
-                style: TextStyle(fontSize: 27.0),
               ),
-              onPressed: () {
-                print('button 1 pressed');
-                Navigator.push(
-                  ctxt,
-                  new MaterialPageRoute(builder: (ctxt) => new Optionspage()),
-                );
-              },
-            ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: RaisedButton(
+                  color: Color(0xFF6dbf43),
+                  textColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Text(
+                    'Options Page',
+                    style: TextStyle(fontSize: 27.0),
+                  ),
+                  onPressed: () {
+                    print('button 1 pressed');
+                    Navigator.push(
+                      ctxt,
+                      new MaterialPageRoute(
+                          builder: (ctxt) => new Optionspage()),
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
         ],
       )),
