@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui' show Color;
 
 class Optionspage extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class Optionspage extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("TKS"),
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xFF6dbf43),
       ),
       body: (Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -16,8 +17,7 @@ class Optionspage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: RaisedButton(
-                  color: Colors.green,
-                  textColor: Colors.white,
+                  color: Color(0xFF6dbf43),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: Text(
@@ -37,7 +37,7 @@ class Optionspage extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: RaisedButton(
-                    color: Colors.green,
+                    color: Color(0xFF6dbf43),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     child: Text(
@@ -60,7 +60,7 @@ class Optionspage extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: RaisedButton(
-                    color: Colors.green,
+                    color: Color(0xFF6dbf43),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     child: Text(
@@ -79,7 +79,7 @@ class Optionspage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: RaisedButton(
-                  color: Colors.green,
+                  color: Color(0xFF6dbf43),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: Text(
@@ -109,7 +109,8 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext ctxt) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Second page"),
+        title: new Text("page_1"),
+        backgroundColor: Color(0xFF6dbf43),
       ),
       body: new Text("Another Page...!!!!!!"),
     );
@@ -121,7 +122,8 @@ class ThirdScreen extends StatelessWidget {
   Widget build(BuildContext ctxt) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("thirsd page"),
+        title: new Text("page_2"),
+        backgroundColor: Color(0xFF6dbf43),
       ),
       body: new Text("Another Page...!!!!!!"),
     );
@@ -133,7 +135,8 @@ class FourthScreen extends StatelessWidget {
   Widget build(BuildContext ctxt) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("fourth page"),
+        title: new Text("page_3"),
+        backgroundColor: Color(0xFF6dbf43),
       ),
       body: new Text("Another Page...!!!!!!"),
     );
@@ -145,7 +148,8 @@ class FifthScreen extends StatelessWidget {
   Widget build(BuildContext ctxt) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("fifth page"),
+        title: new Text("page_4"),
+        backgroundColor: Color(0xFF6dbf43),
       ),
       body: new Text("Another Page...!!!!!!"),
     );

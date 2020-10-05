@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'options.dart';
 
 void main() {
@@ -20,15 +21,27 @@ class MyHomePage extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("TKS"),
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xFF6dbf43),
       ),
-      body: (Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: (Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: <Widget>[
+                Image.asset(
+                  'assets/TKS.jpg',
+                  height: 300,
+                  width: 300,
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
             child: RaisedButton(
-              color: Colors.green,
+              color: Color(0xFF6dbf43),
               textColor: Colors.white,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)),
