@@ -1,12 +1,12 @@
-import 'package:TKS/Services/auth.dart';
 import 'package:flutter/material.dart';
+import 'package:TKS/Services/auth.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
 
   //text fields
@@ -17,7 +17,7 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: new Text("Sign In"),
+        title: new Text("Sign Up"),
         backgroundColor: Color(0xFF6dbf43),
       ),
       body: Container(
@@ -38,7 +38,7 @@ class _SignInState extends State<SignIn> {
               SizedBox(height: 30.0),
               RaisedButton(
                   color: Color(0xFF6dbf43),
-                  child: Text('Sign In'),
+                  child: Text('Register'),
                   onPressed: () async {
                     print(email);
                     print(password);
