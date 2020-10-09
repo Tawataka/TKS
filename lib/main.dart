@@ -1,5 +1,8 @@
+import 'package:TKS/Services/auth.dart';
+import 'package:TKS/models/user.dart';
 import 'package:TKS/wrapper.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,8 +11,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext ctxt) {
-    return new MaterialApp(
-      home: new Wrapper(),
+    return StreamProvider<User>.value(
+      value: AuthService().user,
+      child: MaterialApp(
+        home: Wrapper(),
+      ),
     );
   }
 }
