@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
         actions: <Widget>[
           FlatButton.icon(
             icon: Icon(Icons.person),
-            label: Text('login'),
+            label: Text('Sign Out'),
             onPressed: () async {
               await _auth.signOut();
             },
